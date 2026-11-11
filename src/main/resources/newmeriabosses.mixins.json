@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "fr.akkun.newmeriabosses.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "EnderDragonAccessor",
+    "EnderDragonFightMixin",
+    "EnderDragonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

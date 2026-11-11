@@ -1,0 +1,43 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Akkun"
+description='''
+Newmeria Season 2's bosses: Saphira. Installed on the server and on the players' computers.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="newmeriacore"
+    type="required"
+    reason="Newmeria Bosses gives the bosses registered by Newmeria Core their code."
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="newmeriarpg"
+    type="required"
+    reason="The attacks of the bosses are the spells of Newmeria RPG."
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
